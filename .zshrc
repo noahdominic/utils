@@ -125,6 +125,9 @@ alias 'cd..'='cd ..'
 ## Aliases for flatpak apps
 alias apostrophe="flatpak run org.gnome.gitlab.somas.Apostrophe"
 
+## Laptop CLI stuff
+alias batc='cat /sys/class/power_supply/BAT0/capacity'
+alias bats='cat /sys/class/power_supply/BAT0/status'
 
 # ============================================================================
 # Development - Proj Managemetn
