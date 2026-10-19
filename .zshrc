@@ -40,6 +40,7 @@ export PATH=$PATH$(find $HOME/scripts/ -type d -exec echo -n ":"{} \;) # Adds al
                                                         # `~/scripts`
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/Documents/Notebook/bin/md2pdf
 export PATH=$PATH:$HOME/Applications
 
 ## Path - 3rd party
@@ -84,6 +85,9 @@ mkcd() {
 # ============================================================================
 
 ## Shortcut aliases for ls
+
+# For greek keyboard accidentally being activated
+alias μακε='make'
 
 # For BSD
 export CLICOLOR=1
