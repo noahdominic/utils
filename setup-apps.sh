@@ -11,15 +11,16 @@ echo "      - pip"
 echo "      - tree"
 echo "      - tmux"
 echo "      - nmap"
+echo "      - cmake"
 echo "      - fastfetch"
 if command -v apt >/dev/null 2>&1; then
     echo "  Detected Debian-based system.  Installing with APT..."
     sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
     sudo apt update
-    sudo apt install neovim pandoc tldr npm python3-pip tree tmux fastfetch nmap ripgrep
+    sudo apt install neovim pandoc tldr npm python3-pip tree tmux fastfetch nmap ripgrep cmake
 elif command -v dnf >/dev/null 2>&1; then
     echo "  Detected RHEL-based system.  Installing with DNF..."
-    sudo dnf install neovim pandoc tldr npm python3-pip tree tmux fastfetch nmap ripgrep
+    sudo dnf install neovim pandoc tldr npm python3-pip tree tmux fastfetch nmap ripgrep cmake
 fi
 
 # Install PNPM from NPM
